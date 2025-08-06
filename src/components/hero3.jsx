@@ -42,18 +42,18 @@ function Hero3(){
                 Always ready to help
                   </h2>
                 <Card
-                  imgSrc='../src/assets/svg/phone.svg'
+                  imgSrc='/assets/svg/phone.svg'
                   title="VIA PHONE"
                   desc="Get in contact with us via phone by calling +49 163 444 2034 where are always available by 8 am - 6 pm (Monday - Sunday)"
                 />
                 <Card
-                  imgSrc='../src/assets/svg/email.svg'
+                  imgSrc='/assets/svg/email.svg'
                   title="VIA EMAIL"
                   desc="Get in contact with us via email by sending a mail to lawrencefabian297@yahoo.com where are always available 24/7 (every day)"
                 />
 
                 <Card
-                  imgSrc='../src/assets/svg/chat.svg'
+                  imgSrc='/assets/svg/chat.svg'
                   title="VIA CHAT"
                   desc="You can also reach us by Chat on our website 8 am - 6 pm (Monday - Sunday)"
                 />
@@ -61,7 +61,7 @@ function Hero3(){
 
               <div className="relative w-full flex-1">
                 <img
-                  src='../src/assets/team/clean50.jpeg'
+                  src='/assets/team/clean50.jpeg'
                   width="300px"
                   height="300px"
                   alt="video banner"

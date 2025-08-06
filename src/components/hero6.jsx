@@ -52,7 +52,7 @@ const Card = ({  title, text }) => {
         <div className="relative container mx-auto px-5 md:px-16 flex flex-col md:gap-10 mt-10 p-8 bg-white rounded-lg">
 
         <img
-          src='../src/assets/svg/table.svg'
+          src='/assets/svg/table.svg'
           width="50px"
           height="50px"
           alt="community image"
@@ -77,7 +77,7 @@ const Card = ({  title, text }) => {
             <div className="relative container  mx-auto px-5 md:px-16 flex flex-col gap-5 mt-10 bg-white p-8 rounded-lg">
 
         <img
-          src='../src/assets/svg/house.svg'
+          src='/assets/svg/house.svg'
           width="50px"
           height="50px"
           alt="community image"
@@ -102,7 +102,7 @@ const Card = ({  title, text }) => {
         <div className="relative container md:w-[400px] mx-auto px-5 md:px-16 flex flex-col gap-5 mt-10 bg-white p-8 rounded-lg">
 
          <img
-          src='../src/assets/svg/table.svg'
+          src='/assets/svg/table.svg'
           width={50}
           height={50}
           alt="community image"
@@ -137,7 +137,7 @@ const Card = ({  title, text }) => {
     return (
       <section className="bg-yellow-500">
         <div className="flex justify-center items-center text-center mx-auto m-10">
-          <Card imgSrc='../src/assets/svg/table.svg' title="Cleaning services for homes & offices" text="
+          <Card imgSrc='/assets/svg/table.svg' title="Cleaning services for homes & offices" text="
           You can book a regular cleaning service starting at only €26.90/h. This low price is reserved only for customers ordering cleanings on a regular schedule. How can you benefit from lower prices? Simply select in the booking form how often you want your home cleaning service: once per week, two, three, or four weeks. We can even arrange cleaning multiple times per week if this is what you need. There's no need to sign any long-term contracts or pre-pay for a number of appointments. To cancel your cleaning plan, pause it for a few weeks, or skip some dates, you just need to send us a simple email 48 hours before the next cleaning appointment. If you need the cleaning service just once, or prefer more flexibility, choose one of the one-time cleaning services..
           "/>
 

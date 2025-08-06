@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
 
   const styles = {
-    backgroundImage: `url('../src/assets/clean22.jpeg')`,
+    backgroundImage: `url('/assets/clean22.jpeg')`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',

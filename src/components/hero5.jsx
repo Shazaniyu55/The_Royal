@@ -42,7 +42,7 @@ const Card = ({ imgSrc, title, text }) => {
       <section className=" bg-yellow-500">
         <div className="flex justify-center items-center text-center mx-auto 
       ">
-          <Card imgSrc='../src/assets/svg/calendar.svg' title="Book a home cleaning today" text="
+          <Card imgSrc='/assets/svg/calendar.svg' title="Book a home cleaning today" text="
           Fill out our simple booking form.
           "/>
 

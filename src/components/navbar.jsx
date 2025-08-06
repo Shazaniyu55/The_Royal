@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Broom1 from '../assets/broom1.svg';
 
 function NavBar() {
  
@@ -34,7 +33,7 @@ function NavBar() {
             <div className="flex text-black hover:text-estatelinkwhite items-center justify-between py-5">
               <a href="/" className="flex items-center">
      
-              <img src={Broom1} width={50} height={50} alt="Lawrencegebäudereinigung logo" /> 
+              <img src="/assets/broom1.svg" width={50} height={50} alt="Lawrencegebäudereinigung logo" /> 
               <p className='text-sm p-2 text-black font-bold tracking-widest'>Royal Clean</p>
               </a>
               <div className="md:hidden text-black hover:text-estatelinkwhite">
