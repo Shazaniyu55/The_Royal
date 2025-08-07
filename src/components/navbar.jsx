@@ -1,136 +1,156 @@
+'use client'
 import { useState } from 'react';
+import { Dialog, DialogPanel } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+const navigation = [
+  { name: 'Product', href: '#' },
+  { name: 'Features', href: '#' },
+  { name: 'Marketplace', href: '#' },
+  { name: 'Company', href: '#' },
+]
 function NavBar() {
  
+const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [navbar, setNavbar] = useState(false);
-  const [activeNavItem, setActiveNavItem] = useState('');
-
- {/* I made a function here to toggle the dropdown button whenever 
- the user want to change the state of the dropdown to true from false... */}
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
-  
-   {/* I made a function here to handle what the signin button 
-  should do, you can alter it it to work with your firebase... */}
-
-  const handleClick = (navItem) => {
-    setActiveNavItem(navItem);
-    setNavbar(!navbar);
-  };
-
-  
   return (
-    <nav className="transition-opacity duration-200 w-full top-0 h-25 shadow-lg fixed lg:mb-8 bg-white backdrop-blur-3xl opacity-100 z-50 ">
-      
-     
-        <div className="justify-between px-4 mx-auto lg:max-w-8xl md:items-center md:flex sm:px-8">
-          <div className={`mt-top-adjusted ${navbar ? 'adjust-down' : ''}`}>
-            <div className="flex text-black hover:text-estatelinkwhite items-center justify-between py-5">
-              <a href="/" className="flex items-center">
-     
-              <img src="/assets/broom1.svg" width={50} height={50} alt="ROYALE CLEANERS logo" /> 
-              <p className='text-sm p-2 text-black font-bold tracking-widest'>ROYALE CLEANERS</p>
+    <div className="relative isolate px-6 pt-14 lg:px-8 bg-cover bg-center"  style={{
+  backgroundImage: "url('/assets/clean2.jpg')",
+}}>
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-md">
+        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+          <div className="flex lg:flex-1">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Your Company</span>
+              <img
+                alt=""
+                src="/assets/broom1.svg"
+                className="h-8 w-auto"
+              />
+            </a>
+            <p className='text-2xl font-bold'>ROYALE CLEANERS</p>
+          </div>
+          <div className="flex lg:hidden">
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(true)}
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon aria-hidden="true" className="size-6" />
+            </button>
+          </div>
+          <div className="hidden lg:flex lg:gap-x-12">
+            {navigation.map((item) => (
+              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
+                {item.name}
               </a>
-              <div className="md:hidden text-black hover:text-estatelinkwhite">
-                <button className="text-black hover:text-white pt-2 rounded-md" onClick={handleClick}>
-                  {navbar ? (
-                    <svg className="text-black hover:text-white icon icon-tabler icon-tabler-letter-x" fill="none" height="24" stroke="currentColor" 
-                    strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24" 
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
-                    <line x1="7" x2="17" y1="4" y2="20"/>
-                    <line x1="17" x2="7" y1="4" y2="20"/>
-                    </svg>
-                    
-                  ) : (
-                    <div className='text-black hover:text-estatelinkwhite'>
-                    <svg width="21" height="8" viewBox="0 0 21 8" fill="none" 
-                     xmlns="http://www.w3.org/2000/svg">
-                    <rect width="21" height="2" fill="#1B1919"/>
-                   <rect y="3" width="21" height="2" fill="#1B1919"/>
-                   <rect y="6" width="21" height="2" fill="#1B1919"/>
-                   </svg>
-                   </div>
-
-                  )}
-                </button>
+            ))}
+          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" className="text-sm/6 font-semibold text-gray-900">
+              Log in <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </nav>
+        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+          <div className="fixed inset-0 z-50" />
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div className="flex items-center justify-between">
+              <a href="#" className="-m-1.5 p-1.5">
+                <span className="sr-only">Your Company</span>
+                <img
+                  alt=""
+                  src="/assets/broom1.svg"
+                  className="h-8 w-auto"
+                />
+              </a>
+              <p className='text-2xl font-bold'>ROYALE CLEANERS</p>
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(false)}
+                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              >
+                <span className="sr-only">Close menu</span>
+                <XMarkIcon aria-hidden="true" className="size-6" />
+              </button>
+            </div>
+            <div className="mt-6 flow-root">
+              <div className="-my-6 divide-y divide-gray-500/10">
+                <div className="space-y-2 py-6">
+                  {navigation.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+                <div className="py-6">
+                  <a
+                    href="#"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  >
+                    Log in
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-          <div className={` text-black hover:text-white flex-2 justify-self-center pl-2 ... tracking-tight pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
-              <div className=" space-x-4 text-lg">
-                
-  
-  <ul className="md:px-20 mb-4 mt-2 items-center pr-20 font-medium text-sm... justify-center space-y-4 md:flex md:space-x-10 md:space-y-0">
- 
+          </DialogPanel>
+        </Dialog>
+      </header>
 
-   {/* I made a button on Products and services here... */}
-                  
-  
-
-         {/* I continued with the rest of the listed navlinks items here... */}  
-                  
-                  <li className={`text-black hover:text-white ${activeNavItem === 'about' ? 'active' : ''}`}>
-                    <a href="/price" onClick={() => handleClick('about')}>
-                      Price
-                    </a>
-                  </li>
-                  
-                  
-                  <li className={`text-black hover:text-white  ${activeNavItem === 'experiences' ? 'active' : ''}`}>
-                    <a href="/about" onClick={() => handleClick('experiences')}>
-                    About
-                    </a>
-                  </li>
-                  <li className={`text-black hover:text-white pr-20 ${activeNavItem === 'experiences' ? 'active' : ''}`}>
-                    <a href="/contact" onClick={() => handleClick('experiences')}>
-                    Contact
-                    </a>
-                  </li>
-
-                 
-
-                  
-
+      <div className="relative isolate px-6 pt-14 lg:px-8">
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
+          />
+        </div>
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           
-                  
-               {/* I created a sign in button here to have an event listener of onclick 
-               that it should listen to handle click function above 
-              the parent codeblock... */}
-
-              
-<button className="md:text-base text-sm  hover:border-2 border-2 border-transparent font-semibold py-3 px-8 md:px-10 text-white bg-blue-500  rounded-full">
-          <a href="/login">
-            Login
-          </a>
-        </button>
-
-        <button className="md:text-base text-sm hover:border-2 border-2 border-transparent font-semibold py-3 px-8 md:px-10 text-white bg-blue-500 rounded-full">
-          <a href="/" >
-            Book Now
-          </a>
-        </button>
-            
-                
-                
-                  
-    
-    
-    
-
-</ul>
-              </div>
+          <div className="text-center">
+            <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
+              Home and Office Cleaning Services in UK
+            </h1>
+            <p className="mt-8 text-lg font-medium text-pretty text-black sm:text-xl/8">
+            Book a verified cleaning person for your home or office in UK.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get started
+              </a>
+              <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                Learn more <span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
         </div>
-     
-    </nav>
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 

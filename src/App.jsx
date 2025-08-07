@@ -12,7 +12,7 @@ const App = ()=> {
   return (
     <>
       <NavBar/>
-      <Hero/>
+     
       <Community/>
       <Hero3/>
       <Hero4/>
