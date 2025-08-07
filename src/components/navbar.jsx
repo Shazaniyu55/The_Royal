@@ -33,8 +33,8 @@ function NavBar() {
             <div className="flex text-black hover:text-estatelinkwhite items-center justify-between py-5">
               <a href="/" className="flex items-center">
      
-              <img src="/assets/broom1.svg" width={50} height={50} alt="Lawrencegebäudereinigung logo" /> 
-              <p className='text-sm p-2 text-black font-bold tracking-widest'>Royal Clean</p>
+              <img src="/assets/broom1.svg" width={50} height={50} alt="ROYALE CLEANERS logo" /> 
+              <p className='text-sm p-2 text-black font-bold tracking-widest'>ROYALE CLEANERS</p>
               </a>
               <div className="md:hidden text-black hover:text-estatelinkwhite">
                 <button className="text-black hover:text-white pt-2 rounded-md" onClick={handleClick}>

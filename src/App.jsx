@@ -6,7 +6,7 @@ import Hero3 from './components/hero3.jsx'
 import Hero4 from './components/hero4.jsx'
 import Hero5 from './components/hero5.jsx'
 import Hero6 from './components/hero6.jsx'
-
+import Footer from './components/footer.jsx'
 const App = ()=> {
 
   return (
@@ -18,6 +18,9 @@ const App = ()=> {
       <Hero4/>
       {/* <Hero5/> */}
       <Hero6/>
+      <Footer/>
+
+      
       
 
       
