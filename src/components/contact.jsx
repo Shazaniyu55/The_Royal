@@ -14,7 +14,7 @@ const NewCard = ({ imgSrc, title, desc }) => (
 );
 
 const Faq = ({ question1, answer1, question2, answer2, question3, answer3 }) => (
-  <section className="bg-yellow-100 p-10">
+  <section className="bg-yellow-500 p-10">
     <h1 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h1>
     <div className="max-w-3xl mx-auto space-y-4">
       {[{ q: question1, a: answer1 }, { q: question2, a: answer2 }, { q: question3, a: answer3 }].map((faq, i) => (
@@ -34,7 +34,7 @@ const Card = ({ imgSrc, name }) => (
     <img
       src={imgSrc}
       alt="team member"
-      className="w-24 h-24 md:w-36 md:h-36 rounded-full border-4 border-yellow-400 mb-4 object-cover"
+      className="w-24 h-24 md:w-36 md:h-36 rounded-full border-4 border-yellow-500 mb-4 object-cover"
     />
     <h2 className="text-lg font-semibold text-gray-800">{name}</h2>
   </div>
@@ -95,7 +95,7 @@ function Contact() {
                 id={field}
                 name={field}
                 onChange={handleChange}
-                className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-400"
+                className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-500"
                 required
               />
             </div>
@@ -110,7 +110,7 @@ function Contact() {
               name="message"
               rows="4"
               onChange={handleChange}
-              className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-400"
+              className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-500"
               required
             ></textarea>
           </div>
@@ -118,7 +118,7 @@ function Contact() {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-yellow-400 text-black px-6 py-2 rounded-md hover:bg-yellow-500"
+              className="bg-yellow-500 text-black px-6 py-2 rounded-md hover:bg-yellow-500"
             >
               {loading ? 'Submitting...' : 'Submit'}
             </button>
