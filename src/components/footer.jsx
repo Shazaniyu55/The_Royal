@@ -189,7 +189,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="/"
+                  href="/policy"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                   Privacy Policy
