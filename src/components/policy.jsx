@@ -34,7 +34,7 @@ const LegalInfo = () => {
         {activeTab === "privacy" && (
           <div>
             <h2 className="text-xl font-bold mb-2">Privacy Policy</h2>
-            <p className="text-sm text-gray-600 mb-4">Effective Date: [Insert Date]</p>
+            <p className="text-sm text-gray-600 mb-4">Effective Date: 8/82025</p>
 
             <p>
               At <strong>The Royale Cleaners</strong>, we value your privacy and are committed to protecting your personal data.
@@ -65,14 +65,14 @@ const LegalInfo = () => {
             <p>Our site may use cookies to improve user experience.</p>
 
             <h3 className="font-semibold mt-4">7. Contact Us</h3>
-            <p>Email: [Insert Email] | Phone: [Insert Phone]</p>
+            <p>Email: royalecleanersuk@gmail.com | Phone: +44-7349-791131</p>
           </div>
         )}
 
         {activeTab === "terms" && (
           <div>
             <h2 className="text-xl font-bold mb-2">Terms & Conditions</h2>
-            <p className="text-sm text-gray-600 mb-4">Effective Date: [Insert Date]</p>
+            <p className="text-sm text-gray-600 mb-4">Effective Date: 8/8/2025</p>
 
             <h3 className="font-semibold mt-4">1. Service Scope</h3>
             <p>We provide professional residential and commercial cleaning services.</p>
@@ -99,10 +99,10 @@ const LegalInfo = () => {
             <p>We may update these terms at any time. Continued use means acceptance.</p>
 
             <h3 className="font-semibold mt-4">9. Governing Law</h3>
-            <p>These terms follow the laws of [Insert Country/State].</p>
+            <p>These terms follow the laws of United Kingdom.</p>
 
             <h3 className="font-semibold mt-4">10. Contact</h3>
-            <p>Email: [Insert Email] | Phone: [Insert Phone]</p>
+            <p>Email: royalecleanersuk@gmail.com | Phone: +44-7349-791131</p>
           </div>
         )}
       </div>
