@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import NavBar from "./navbar";
 import Footer from "./footer";
 import ScrollTop from "./scroll_top";
+import NavBar2 from "./nav2";
 
 const TeamCard = ({ imgSrc, name = "Team Member", title = "Staff" }) => {
   return (
@@ -25,8 +26,8 @@ const TeamCard = ({ imgSrc, name = "Team Member", title = "Staff" }) => {
 const HomeTeam = () => {
   return (
     <>
-    <NavBar/>
-    <section className="container mx-auto px-5 md:px-16 lg:px-24 py-20 bg-gray-50">
+    <NavBar2/>
+    <section className="container mt-20 mx-auto px-5 md:px-16 lg:px-24 py-20 bg-gray-50">
       <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-800 mb-12">
         Royale Cleaners Team
       </h2>

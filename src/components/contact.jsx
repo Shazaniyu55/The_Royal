@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ScrollTop from './scroll_top';
-import NavBar from './navbar';
 import Footer from './footer';
+import NavBar2 from './nav2';
 
 const NewCard = ({ imgSrc, title, desc }) => (
   <div className="flex items-start gap-4 bg-white p-4 rounded-lg shadow-md">
@@ -70,9 +70,9 @@ function Contact() {
 
   return (
     <>
-      <NavBar />
+      <NavBar2/>
 
-      <section className="container mx-auto px-4 py-16 bg-gray-50">
+      <section className="container mt-20 mx-auto px-4 py-16 bg-gray-50">
         <h1 className="text-4xl font-bold text-center mb-10 text-gray-900">We usually reply within 3 hours</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card imgSrc='/assets/team/team10.jpeg' name='Jane Doe' />

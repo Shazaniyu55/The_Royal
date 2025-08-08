@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import NavBar2 from './nav2';
+import Footer from './footer';
+import ScrollTop from './scroll_top';
 
 const AuthForm = ({ isLogin, onToggle }) => {
   return (
@@ -59,9 +62,15 @@ const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
+    <>
+    <NavBar2/>
     <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
       <AuthForm isLogin={isLogin} onToggle={() => setIsLogin(!isLogin)} />
     </div>
+      <ScrollTop/>
+    
+    <Footer/>
+    </>
   );
 };
 
