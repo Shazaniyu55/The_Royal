@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
             <div className="flex mt-8 space-x-6 text-white">
               <a
-                href=""
+                href="https://www.facebook.com/share/1CEzGKZygx/"
                 target="_blank"
               >
                 <FaFacebook size={20} className="hover:text-yellow hover:-translate-y-1 transition-all" />
@@ -33,7 +33,7 @@ const Footer = () => {
                 <FaTwitter size={20} className="hover:text-yellow hover:-translate-y-1 transition-all" />
               </a>
               <a
-                href=""
+                href="https://www.instagram.com/royalecleanersuk/?igsh=MWJvdGs1N2dvdWc2cQ%3D%3D#"
                 target="_blank"
               >
                 <FaInstagramSquare size={20} className="hover:text-yellow hover:-translate-y-1 transition-all" />
