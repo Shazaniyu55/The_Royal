@@ -59,7 +59,7 @@ function Hero3(){
                 />
               </div>
 
-              <div className="relative w-full flex-1">
+              <div className="relative  w-full flex-1">
                 <img
                   src='/assets/team/clean50.jpeg'
                   width="300px"

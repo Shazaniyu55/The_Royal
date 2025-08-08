@@ -4,10 +4,10 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Team', href: '/Team' },
+  { name: 'Contact', href: '/contact' },
 ]
 function NavBar() {
  
@@ -17,10 +17,10 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     <div className="relative isolate px-6 pt-14 lg:px-8 bg-cover bg-center"  style={{
   backgroundImage: "url('/assets/clean2.jpg')",
 }}>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-md">
+      <header className="absolute top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-md">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
@@ -48,7 +48,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold text-gray-900">
+            <a href="/login" className="text-sm/6 font-semibold text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -57,7 +57,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                  <img
                 alt=""
