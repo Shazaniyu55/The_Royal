@@ -29,13 +29,13 @@ const Card = ({ imgSrc, title, desc }) => {
 
 function Hero3(){
         return(
-            <section className="bg-black mt-4">
+            <section className="bg-black mt-4 p-4">
             <div className="flex gap-10 items-center flex-col-reverse lg:flex-row">
             <div className="flex gap-5 md:gap-10 flex-col flex-1">
                 <div className="flex flex-col gap-4">
       
                   <h2 className="text-3xl md:text-4xl font-bold text-white text-center lg:text-left">
-                   English-speaking customer support 7 days/week
+                  Royale Cleaners customer support 7 days/week
                   </h2>
                 </div>
                 <h2 className="text-3xl md:text-2xl font-bold text-white text-center lg:text-left">
@@ -44,12 +44,12 @@ function Hero3(){
                 <Card
                   imgSrc='/assets/svg/phone.svg'
                   title="VIA PHONE"
-                  desc="Get in contact with us via phone by calling +49 163 444 2034 where are always available by 8 am - 6 pm (Monday - Sunday)"
+                  desc="Get in contact with us via phone by calling +44-7349-791131 where are always available by 8 am - 6 pm (Monday - Sunday)"
                 />
                 <Card
                   imgSrc='/assets/svg/email.svg'
                   title="VIA EMAIL"
-                  desc="Get in contact with us via email by sending a mail to lawrencefabian297@yahoo.com where are always available 24/7 (every day)"
+                  desc="Get in contact with us via email by sending a mail to royalecleanersuk@gmail.com where are always available 24/7 (every day)"
                 />
 
                 <Card
