@@ -6,6 +6,7 @@ import Hero6 from './hero6.jsx'
 import Footer from './footer'
 import Hero4 from './hero4.jsx'
 import ScrollTop from './scroll_top.jsx'
+import ScrollTriggered from './card2.jsx'
 
 
 const Home = ()=> {
@@ -13,8 +14,9 @@ const Home = ()=> {
   return (
     <>
       <NavBar/>
+      <ScrollTriggered/>
      
-      <Community/>
+     
       <Hero3/>
      <Hero4/>
       
