@@ -149,7 +149,7 @@ function NavBar() {
           <p className="mt-8 text-lg font-medium text-white sm:text-xl/8 drop-shadow-lg">
             Book a verified cleaning person for your home or office in UK.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          {/* <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#"
               className="rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-yellow-500"
@@ -157,7 +157,7 @@ function NavBar() {
               Book Now
             </a>
             
-          </div>
+          </div> */}
         </div>
       </div>
 
