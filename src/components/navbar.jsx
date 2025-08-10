@@ -160,6 +160,8 @@ function NavBar() {
           </div>
         </div>
       </div>
+
+      
     </div>
   )
 }
