@@ -34,11 +34,11 @@ const HomeTeam = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <TeamCard
-          imgSrc='/assets/team/team8.jpeg'
-          name="Sarah Thompson"
+          imgSrc='/obi.jpeg'
+          name="Mr Obi"
           title="Operations Manager"
         />
-        <TeamCard
+        {/* <TeamCard
           imgSrc='/assets/team/team9.jpeg'
           name="James Parker"
           title="Customer Service Lead"
@@ -47,7 +47,7 @@ const HomeTeam = () => {
           imgSrc='/assets/team/team10.jpeg'
           name="Olivia Bennett"
           title="Cleaning Supervisor"
-        />
+        /> */}
       </div>
     </section>
 
