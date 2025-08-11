@@ -74,7 +74,7 @@ function Contact() {
 
       
 
-      <section className='bg-white py-12 px-4 mt-8'>
+      <section className='bg-white py-12 px-4 mt-20'>
         <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-gray-100 p-8 rounded-lg shadow-lg space-y-6">
           <h2 className="text-2xl font-bold text-center">Contact Us</h2>
 
@@ -122,7 +122,7 @@ function Contact() {
       <section className="bg-black text-white py-16 px-4">
         <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-12">
           <div className="flex-1 space-y-6">
-            <h2 className="text-3xl font-bold">English-speaking customer support 7 days/week</h2>
+            <h2 className="text-3xl font-bold">Royale Cleaners customer support 7 days/week</h2>
             <h3 className="text-xl">Always ready to help</h3>
             <NewCard
               imgSrc='/assets/svg/phone.svg'
