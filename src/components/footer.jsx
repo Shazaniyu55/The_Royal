@@ -13,7 +13,7 @@ const Footer = () => {
               <p className="text-2xl text-white">ROYALE CLEANERS</p>
             </a>
             <p className="max-w-xs mt-4 text-sm text-white">
-              Quality Products At Its Best
+              Quality Service At Its Best
             </p>
             <div className="flex mt-8 space-x-6 text-white">
               <a
@@ -42,7 +42,7 @@ const Footer = () => {
 
             <p className="leading-loose tracking-tighter  leading-normal mt-8 text-xs text-white">
             ROYALE CLEANERS — Home & Office Cleaning is an online marketplace that connects private and commercial customers with experienced cleaners in Austria, Belgium, France, Germany, Italy, Luxembourg, Poland, Portugal, Spain, and Sweden.
-            The company was founded in 2025 by Mr. Obi Chkwuma.
+            4The company was founded in 2025 by Mr. Obi Chkwuma.
         </p>
           </div>
 
@@ -61,109 +61,65 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="/"
+                  href="/about"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                   About
                 </a>
               
                 <a
-                  href="/"
+                  href="/contact"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
-                  Pricing
+                  Contact
                 </a>
-                <a
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Contact Us
-                </a>
+                
+                
 
-                <a
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Frequently Asked Questions
-                </a>
 
-                <a
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Register As A Cleaner
-                </a>
 
-                <a
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Cleaning Associate Portal
-                </a>
-
-                <a
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Blog
-                </a>
+                
               </nav>
             </div>
             <div>
               <p className="font-medium">SERVICES</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm ">
                 <a
-                  href="/purewater"
+                  href="/about"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                   Regular Basic Cleaning
                 </a>
                 <a
-                  href="/"
+                  href="/about"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                   One-Time Basic Cleaning
                 </a>
                 <a
-                  href="/purewater"
+                  href="/about"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                  Last-Minute Basic Cleaning
                 </a>
                 <a
-                  href="/printing"
+                  href="/about"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                   Deep Cleaning
                 </a>
 
-                <a
-                  href="/printing"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Move-In/Move-Out Cleaning
-                </a>
+               
 
                 <a
-                  href="/printing"
+                  href="/about"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                   Office Cleaning
                 </a>
 
-                <a
-                  href="/printing"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Sanitization & Disinfection
-                </a>
 
-                <a
-                  href="/printing"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Laundry & Iorning
-                </a>
+                
                
               </nav>
             </div>
@@ -176,14 +132,9 @@ const Footer = () => {
                 >
                   Global Website
                 </a>
+                
                 <a
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Imprint
-                </a>
-                <a
-                  href="/"
+                  href="/policy"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                   Terms & Condition
@@ -197,7 +148,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="/"
+                  href="#"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 
                 >
@@ -205,7 +156,7 @@ const Footer = () => {
             
                 </a>
                  <a
-                  href="/"
+                  href="#"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 
                 >
@@ -220,29 +171,19 @@ const Footer = () => {
               <p className="font-medium">CITIES</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm ">
                 <a
-                  href="/"
+                  href="/policy"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                   Privacy Policy
                 </a>
                 <a
-                  href="/"
+                  href="/policy"
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                   Terms &amp; Conditions
                 </a>
-                <a
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Returns Policy
-                </a>
-                <a
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Accessibility
-                </a>
+                
+                
               </nav>
             </div>
 
