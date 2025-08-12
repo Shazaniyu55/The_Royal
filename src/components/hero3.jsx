@@ -49,7 +49,7 @@ function Hero3(){
                 <Card
                   imgSrc='/assets/svg/email.svg'
                   title="VIA EMAIL"
-                  desc="Get in contact with us via email by sending a mail to royalecleanersuk@gmail.com where are always available 24/7 (every day)"
+                  desc="Get in contact with us via email by sending a mail to info@royalecleaners.co.uk where are always available 24/7 (every day)"
                 />
 
                 <Card

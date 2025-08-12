@@ -65,7 +65,7 @@ const LegalInfo = () => {
             <p>Our site may use cookies to improve user experience.</p>
 
             <h3 className="font-semibold mt-4">7. Contact Us</h3>
-            <p>Email: royalecleanersuk@gmail.com | Phone: +44-7349-791131</p>
+            <p>Email: info@royalecleaners.co.uk | Phone: +44-7349-791131</p>
           </div>
         )}
 
@@ -102,7 +102,7 @@ const LegalInfo = () => {
             <p>These terms follow the laws of United Kingdom.</p>
 
             <h3 className="font-semibold mt-4">10. Contact</h3>
-            <p>Email: royalecleanersuk@gmail.com | Phone: +44-7349-791131</p>
+            <p>Email: info@royalecleaners.co.uk | Phone: +44-7349-791131</p>
           </div>
         )}
       </div>

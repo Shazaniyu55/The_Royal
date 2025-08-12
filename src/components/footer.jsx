@@ -208,7 +208,7 @@ const Footer = () => {
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 
                 >
-                <p>royalecleanersuk@gmail.com</p>
+                <p>info@royalecleaners.co.uk</p>
             
                 </a>
 

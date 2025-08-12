@@ -132,7 +132,7 @@ function Contact() {
             <NewCard
               imgSrc='/assets/svg/email.svg'
               title="VIA EMAIL"
-              desc="Send an email to  royalecleanersuk@gmail.com — available 24/7."
+              desc="Send an email to  info@royalecleaners.co.uk — available 24/7."
             />
             <NewCard
               imgSrc='/assets/svg/chat.svg'
