@@ -41,7 +41,8 @@ const Footer = () => {
             </div>
 
             <p className="leading-loose tracking-tighter  leading-normal mt-8 text-xs text-white">
-            ROYALE CLEANERS. Home & Office Cleaning is an online marketplace that matches private and commercial<br/>cushrefmers with experienced cleaners in Austria, Belgium, France, Germany, Italy, Luxembourg, Poland, Portugal,<br/> Spain, and Sweden. Fabian family.. Home & Office Cleaning is a registered trademark of A&K Ventures OÜ,<br/> a company founded in July 2016 by Karol Kaczmarek and Amadeusz Annissimo.
+            ROYALE CLEANERS — Home & Office Cleaning is an online marketplace that connects private and commercial customers with experienced cleaners in Austria, Belgium, France, Germany, Italy, Luxembourg, Poland, Portugal, Spain, and Sweden.
+            The company was founded in 2025 by Mr. Obi Chkwuma.
         </p>
           </div>
 
