@@ -69,6 +69,14 @@ const Testimonials = () => {
             name="Alexander Smith"
           />
         </div>
+
+         <div>
+          <Card
+            star={<StarHalfRoundedIcon />}
+            title="Good Cleaning Services"
+            name="Alexander Smith"
+          />
+        </div>
       </Carousel>
     </section>
   );
