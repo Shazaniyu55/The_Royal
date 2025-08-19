@@ -22,7 +22,7 @@ function About(){
           <div className='grid grid-cols-1 lg:grid-cols-2 relative gap-x-8 gap-y-16 px-4 pt-12 sm:pt-20 text-black'>
               <div className='bg-yellow-500 rounded-xl shadow-2xl'>
                   <div className='p-8'>
-                      <FaPhone size={50} className='w-16 p-4 bg-black1 text-white rounded-lg mt-[-4rem]' />
+                      <FaPhone size={50} className='w-16 p-4 bg-black text-white rounded-lg mt-[-4rem]' />
                       <h3 className='font-bold text-2xl my-6'>Sales</h3>
                       <p className='text-gray-600 md:text-xl'>
                       Royale Cleaners. Home & Office Cleaning is a curated online marketplace for home & office cleaning services. We work with background-checked, experienced cleaners in the UK.
@@ -33,7 +33,7 @@ function About(){
               </div>
               <div className='bg-yellow-500 mt-10  rounded-xl shadow-2xl'>
                   <div className='p-8'>
-                      <FaGlobe size={50} className='w-16 p-4 bg-black1 text-white rounded-lg mt-[-4rem]' />
+                      <FaGlobe size={50} className='w-16 p-4 bg-black text-white rounded-lg mt-[-4rem]' />
                       <h3 className='font-bold text-2xl my-6'>Technical Support</h3>
                       <p className='text-gray-600 md:text-xl'>
 
