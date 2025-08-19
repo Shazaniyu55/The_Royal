@@ -5,6 +5,7 @@ import Home from './components/home.jsx';
 import Contact from './components/contact.jsx';
 import HomeTeam from './components/team.jsx';
 import AuthPage from './components/login.jsx';
+import About from './components/about.jsx';
 const App = ()=> {
 
   return (
@@ -17,6 +18,7 @@ const App = ()=> {
         <Route path="/team" element={<HomeTeam/>} />
         <Route path="/login" element={<AuthPage/>} />
         <Route path="/policy" element={<LegalInfo/>} />
+        <Route path="/about" element={<About/>} />
       </Routes>
       
 

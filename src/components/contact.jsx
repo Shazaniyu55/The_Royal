@@ -74,7 +74,7 @@ function Contact() {
 
       
 
-      <section className='bg-white py-12 px-4 mt-20'>
+      <section className='bg-yellow-500 py-12 px-4 mt-20'>
         <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-gray-100 p-8 rounded-lg shadow-lg space-y-6">
           <h2 className="text-2xl font-bold text-center">Contact Us</h2>
 

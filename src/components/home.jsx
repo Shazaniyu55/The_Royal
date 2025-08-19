@@ -6,6 +6,7 @@ import Hero4 from './hero4.jsx'
 import ScrollTop from './scroll_top.jsx'
 import ScrollTriggered from './card2.jsx'
 import Card3 from './card3.jsx'
+import Testimonials from './testimonial.jsx'
 
 const Home = ()=> {
 
@@ -16,6 +17,7 @@ const Home = ()=> {
       <Hero3/>
       <Card3/>
       <Hero6/>
+      <Testimonials/>
       <Footer/>
       <ScrollTop/>    
     </>

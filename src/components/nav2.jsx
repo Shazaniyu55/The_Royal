@@ -46,9 +46,12 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="/login" className="text-sm/6 font-semibold text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+            <a
+          href="#"
+          className="rounded-md  h-[40px] bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-yellow-500"
+        >
+          Book Now
+        </a>
           </div>
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -88,11 +91,11 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
                 </div>
                 <div className="py-6">
                   <a
-                    href="/login"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
+          href="#"
+          className="rounded-md  h-[40px] bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-yellow-500"
+        >
+          Book Now
+        </a>
                 </div>
               </div>
             </div>
