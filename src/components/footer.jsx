@@ -188,7 +188,7 @@ const Footer = () => {
             </div>
 
 
-            <div>
+            {/* <div>
               <p className="font-medium">IN OTHER COUNTRIES</p>
 
               <nav className="flex flex-col mt-4 space-y-2 text-sm ">
@@ -251,7 +251,7 @@ const Footer = () => {
               </nav>
              
               
-            </div>
+            </div> */}
 
             <div>
               <p className="font-medium">CONVENIENT ONLINE PAYMENTS</p>
