@@ -47,7 +47,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-          href="#"
+          href="/book"
           className="rounded-md  h-[40px] bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-yellow-500"
         >
           Book Now
@@ -91,7 +91,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
                 </div>
                 <div className="py-6">
                   <a
-          href="#"
+          href="/book"
           className="rounded-md  h-[40px] bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-yellow-500"
         >
           Book Now

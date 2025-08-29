@@ -4,8 +4,9 @@ import LegalInfo from './components/policy.jsx'
 import Home from './components/home.jsx';
 import Contact from './components/contact.jsx';
 import HomeTeam from './components/team.jsx';
-import AuthPage from './components/login.jsx';
+// import AuthPage from './components/login.jsx';
 import About from './components/about.jsx';
+import BookingForm from './components/bookingForm.jsx';
 const App = ()=> {
 
   return (
@@ -16,7 +17,7 @@ const App = ()=> {
         <Route path="/" element={<Home/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/team" element={<HomeTeam/>} />
-        <Route path="/login" element={<AuthPage/>} />
+        <Route path="/book" element={<BookingForm/>} />
         <Route path="/policy" element={<LegalInfo/>} />
         <Route path="/about" element={<About/>} />
       </Routes>

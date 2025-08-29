@@ -56,7 +56,7 @@ function NavBar() {
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only ">Your Company</span>
               <img
                 alt=""
                 src="/assets/logo2.png"
@@ -83,7 +83,7 @@ function NavBar() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-              href="/login"
+              href="/book"
               className="text-sm/6 font-semibold text-white bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded-lg"
             >
               Book Now
@@ -128,7 +128,7 @@ function NavBar() {
                 </div>
                 <div className="py-6">
                   <a
-                    href="/login"
+                    href="/book"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white bg-blue-500 hover:bg-blue-600"
                   >
                     Book Now
@@ -166,7 +166,7 @@ function NavBar() {
         className="mt-10 flex items-center justify-center gap-x-6"
       >
         <a
-          href="#"
+          href="/book"
           className="rounded-md sm:w-[300px] h-[40px] bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-yellow-500"
         >
           Book Now
