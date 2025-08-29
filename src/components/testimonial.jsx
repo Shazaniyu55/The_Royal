@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ButtonGroup from "./buttongroup.jsx";
 
-const Card = ({ star, title,  name}) => {
+const Card = ({ star, title,  name }) => {
   return (
     <div className="mx-2 flex flex-col gap-4 select-none cursor-pointer border border-[#4e4e4e31] p-10 rounded-lg hover:shadow-xl transition-all">
       <div className="text-yellow-600">
@@ -21,9 +21,9 @@ const Card = ({ star, title,  name}) => {
         freelancer.
       </p>
       <div className="flex items-center gap-4 mt-5">
-        {/* <Image src={imgSrc} width={50} height={50} alt="testimonials" /> */}
+        <img src="/assets/user.png" alt="user" className="w-[50px] h-[50px] rounded-full" />
         <div>
-          <h3 className="font-semibold">{name}</h3>
+          <h3 className="font-semibold">{name}</h3> 
           
         </div>
       </div>
