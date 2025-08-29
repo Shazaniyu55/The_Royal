@@ -149,7 +149,7 @@ function NavBar() {
         transition={{ duration: 1, ease: "easeOut" }}
         className="text-5xl font-semibold tracking-tight text-white sm:text-7xl drop-shadow-lg"
       >
-        The Royale Cleaners Home and Office Cleaning Services in UK
+         Royale Cleaners Home and Office Cleaning Services in UK
       </motion.h1>
            <motion.p
         initial={{ opacity: 0, y: 40 }}
