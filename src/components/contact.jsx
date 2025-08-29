@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ScrollTop from './scroll_top';
 import Footer from './footer';
 import NavBar2 from './nav2';
@@ -40,53 +40,91 @@ const Card = ({ imgSrc, name }) => (
   </div>
 );
 
+const Alert = ({ type, message, onClose }) => {
+  if (!message) return null;
+
+  return (
+    <div
+      className={`fixed top-6 right-6 px-6 py-3 rounded-lg shadow-lg text-white font-medium z-50
+      ${type === "success" ? "bg-green-500" : "bg-red-500"}`}
+    >
+      <div className="flex items-center gap-3">
+        <span>{message}</span>
+        <button onClick={onClose} className="font-bold">✕</button>
+      </div>
+    </div>
+  );
+};
+
 function Contact() {
   const [formData, setFormData] = useState({});
   const [loading, setLoading] = useState(false);
+  const [alert, setAlert] = useState({ type: "", message: "" });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+
     try {
-      const response = await fetch('/api/message', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const response = await fetch("https://the-royal-server.vercel.app/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+
       if (response.ok) {
-        window.location.reload();
+        setAlert({ type: "success", message: "Your message has been sent successfully!" });
+        setFormData({});
       } else {
-        console.error(await response.json());
+        setAlert({ type: "error", message: "Something went wrong. Please try again." });
       }
     } catch (error) {
-      console.error(error);
+      setAlert({ type: "error", message: "Network error. Please try again later." });
     } finally {
       setLoading(false);
     }
   };
 
+    useEffect(() => {
+    if (alert.message) {
+      const timer = setTimeout(() => setAlert({ type: "", message: "" }), 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [alert]);
+
   return (
     <>
       <NavBar2/>
 
-      
 
-      <section className='bg-yellow-500 py-12 px-4 mt-20'>
-        <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-gray-100 p-8 rounded-lg shadow-lg space-y-6">
+       <Alert
+        type={alert.type}
+        message={alert.message}
+        onClose={() => setAlert({ type: "", message: "" })}
+      />
+
+      
+<section className="bg-yellow-500 py-12 px-4 mt-20">
+        <form
+          onSubmit={handleSubmit}
+          className="max-w-2xl mx-auto bg-gray-100 p-8 rounded-lg shadow-lg space-y-6"
+        >
           <h2 className="text-2xl font-bold text-center">Contact Us</h2>
 
-          {['fullName', 'email', 'phone', 'city'].map((field) => (
+          {["fullname", "email", "phone", "city", ].map((field) => (
             <div key={field}>
               <label htmlFor={field} className="block text-sm font-medium text-gray-700 capitalize">
-                {field.replace(/([A-Z])/, ' $1')}
+                {field.replace(/([A-Z])/, " $1")}
               </label>
               <input
-                type={field === 'email' ? 'email' : field === 'phone' ? 'tel' : 'text'}
+                type={field === "email" ? "email" : field === "phone" ? "tel" : "text"}
                 id={field}
                 name={field}
+                value={formData[field] || ""}
                 onChange={handleChange}
                 className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-500"
                 required
@@ -102,6 +140,7 @@ function Contact() {
               id="message"
               name="message"
               rows="4"
+              value={formData.message || ""}
               onChange={handleChange}
               className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-500"
               required
@@ -111,9 +150,10 @@ function Contact() {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-yellow-500 text-black px-6 py-2 rounded-md hover:bg-yellow-500"
+              disabled={loading}
+              className="bg-yellow-500 text-black px-6 py-2 rounded-md hover:bg-yellow-600 disabled:opacity-50"
             >
-              {loading ? 'Submitting...' : 'Submit'}
+              {loading ? "Submitting..." : "Submit"}
             </button>
           </div>
         </form>
