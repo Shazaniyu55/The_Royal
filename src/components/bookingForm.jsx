@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Footer from "./footer";
+import NavBar2 from "./nav2";
 
 // Alert Component
 const Alert = ({ message, type, onClose }) => {
@@ -69,8 +71,11 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-50 to-blue-100 p-6">
-      <div className="w-full max-w-2xl bg-white rounded-2xl shadow-lg p-8">
+
+    <>
+    <NavBar2/>
+    <div className="min-h-screen flex items-center justify-center  p-6 mt-10">
+      <div className="w-full max-w-2xl bg-yellow-500 rounded-2xl shadow-lg p-8">
         <h2 className="text-2xl font-bold text-center text-blue-800 mb-6">
           Book a Cleaning Appointment
         </h2>
@@ -82,7 +87,7 @@ const BookingForm = () => {
             value={formData.fullname}
             onChange={handleChange}
             placeholder="Full Name"
-            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none bg-white"
             required
           />
 
@@ -92,7 +97,7 @@ const BookingForm = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="Email"
-            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none bg-white"
             required
           />
 
@@ -102,7 +107,7 @@ const BookingForm = () => {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Phone"
-            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none bg-white"
             required
           />
 
@@ -112,7 +117,7 @@ const BookingForm = () => {
             value={formData.city}
             onChange={handleChange}
             placeholder="City"
-            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none bg-white"
             required
           />
 
@@ -120,7 +125,7 @@ const BookingForm = () => {
             name="service"
             value={formData.service}
             onChange={handleChange}
-            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none md:col-span-2"
+            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none md:col-span-2 bg-white"
             required
           >
             <option value="">Select Service</option>
@@ -135,7 +140,7 @@ const BookingForm = () => {
             name="date"
             value={formData.date}
             onChange={handleChange}
-            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none bg-white"
             required
           />
 
@@ -144,7 +149,7 @@ const BookingForm = () => {
             name="time"
             value={formData.time}
             onChange={handleChange}
-            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none bg-white"
             required
           />
 
@@ -154,7 +159,7 @@ const BookingForm = () => {
             onChange={handleChange}
             placeholder="Additional Notes"
             rows="4"
-            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none md:col-span-2"
+            className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none md:col-span-2 bg-white"
           />
 
           <button
@@ -173,6 +178,9 @@ const BookingForm = () => {
         onClose={() => setAlert({ message: "", type: "" })}
       />
     </div>
+
+      <Footer/>
+    </>
   );
 };
 
