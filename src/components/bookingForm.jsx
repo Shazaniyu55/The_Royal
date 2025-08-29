@@ -74,8 +74,8 @@ const BookingForm = () => {
 
     <>
     <NavBar2/>
-    <div className="min-h-screen flex items-center justify-center  p-6 mt-10">
-      <div className="w-full max-w-2xl bg-yellow-500 rounded-2xl shadow-lg p-8">
+    <div className=" md:flex items-center justify-center  p-6 ">
+      <div className="w-full md:max-w-2xl bg-yellow-500 rounded-2xl shadow-lg p-8 md:mt-40">
         <h2 className="text-2xl font-bold text-center text-blue-800 mb-6">
           Book a Cleaning Appointment
         </h2>
